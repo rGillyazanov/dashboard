@@ -1,0 +1,14 @@
+@import "src/assets/variables";
+
+.sidebar {
+  height: 100%;
+  width: $sidebar-width-hide;
+  position: fixed;
+  background-color: #03234A;
+  transition: all 0.5s ease;
+
+  &.active {
+    width: $sidebar-width-active;
+    transition: all 0.5s ease;
+  }
+}

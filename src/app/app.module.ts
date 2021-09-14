@@ -14,6 +14,9 @@ import { AuthState } from './store/auth.state';
 import { environment } from '../environments/environment';
 import { HttpClientModule } from '@angular/common/http';
 
+import { SidebarComponent } from './layouts/sidebar/sidebar.component';
+import { HeaderComponent } from './layouts/header/header.component';
+
 const NGXSModules = [
   NgxsModule.forRoot([
     AuthState
@@ -32,7 +35,9 @@ const NGXSModules = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SidebarComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

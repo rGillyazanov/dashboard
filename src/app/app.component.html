@@ -1,4 +1,8 @@
-<a routerLink="auth/login">Login</a>
-<a routerLink="/">Home</a>
+<app-sidebar></app-sidebar>
+<div class="main">
+  <app-header></app-header>
 
-<router-outlet></router-outlet>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

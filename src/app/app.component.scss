@@ -1,0 +1,19 @@
+@import "src/assets/variables";
+
+.main {
+  position: absolute;
+  height: 100%;
+  width: calc(100% - #{$sidebar-width-hide});
+  left: $sidebar-width-hide;
+  transition: all 0.5s ease;
+}
+
+.main.active {
+  width: calc(100% - #{$sidebar-width-active});
+  left: $sidebar-width-active;
+  transition: all 0.5s ease;
+}
+
+.content {
+  padding: 25px;
+}
